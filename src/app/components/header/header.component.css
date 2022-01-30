@@ -1,0 +1,15 @@
+
+.container {
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(203,184,133);
+    background-color: rgb(4,7,48);
+}
+
+h1{
+    margin-top: 1rem;
+    border: 1px solid rgb(203,184,133);
+    padding: 1rem 10%;
+    border-radius: 2rem;
+}

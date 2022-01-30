@@ -27,13 +27,20 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BookListComponent } from './components/book/book-list/book-list.component';
+import { LoginComponent } from './components/login/login.component';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    BookListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +63,10 @@ import { HomeComponent } from './components/home/home.component';
     MatListModule,
     MatCardModule,
     MatFormFieldModule,
+    ToastrModule.forRoot({
+       timeOut: 4000,
+       closeButton: true,
+       progressBar: true}),
 
     // Forms
     FormsModule,

@@ -1,16 +1,17 @@
 <mat-drawer-container class="container" autosize>
     <mat-drawer #drawer class="sidenav" mode="side">
-        <img src="assets/imgs/livrosHeaderMenu.jpg" alt="Header Menu">
+        <img src="/assets/imgs/imagem perfil.jpg" alt="Header Menu">
         <mat-nav-list class="nav-list">
-            <a mat-list-item routerLink = "/"> <i class="material-icons">home</i>Home</a>
+            <a mat-list-item routerLink = "home"> <i class="material-icons">home</i>Home</a>
             <a mat-list-item routerLink = "/"> <i class="material-icons">person</i>Usuário</a>
-            <a mat-list-item routerLink = "/"> <i class="material-icons">book</i>Livro</a>
+            <a mat-list-item routerLink = "/books"> <i class="material-icons">book</i>Livros</a>
             <a mat-list-item routerLink = "/"> <i class="material-icons">bookmarks</i>Categoria</a>
             <a mat-list-item routerLink = "/"> <i class="material-icons">logout</i>Logout</a>
         </mat-nav-list>
     </mat-drawer>
   
     <div class="sidenav-content">
+      <app-header></app-header>
       <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
         <mat-icon>menu</mat-icon>
       </button>

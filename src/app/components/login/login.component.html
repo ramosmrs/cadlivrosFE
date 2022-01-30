@@ -1,0 +1,24 @@
+<div class="container">
+    <form class="form">
+
+        <h1>Cadastro de Livros</h1>
+
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input [formControl]="email" required
+                 [(ngModel)]="cred.email" 
+                 name="email" 
+                 matInput placeholder="teste@email.com">
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Senha</mat-label>
+            <input [formControl]="password" required
+                   [(ngModel)]="cred.password" 
+                   name="password" 
+                   type="password" 
+                   matInput placeholder="Ex. 123">
+        </mat-form-field>
+        <button (click)="Logar()" [disabled]="!validaCampos()" class="full-width mat-elevation-z4" mat-stroked-button color="primary">Login</button>
+    </form>
+</div>
